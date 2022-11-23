@@ -1,6 +1,6 @@
 import pandas as pd
 
-#creating dataframe
+# Creating dataframe
 
 column = ["Bray","Batman","Spongebob"]          #list
 titled_columns = {"Name": column,
@@ -8,7 +8,7 @@ titled_columns = {"Name": column,
                  "Weight": [62, 100, 1] }       #Dictionary
 data = pd.DataFrame(titled_columns)
 
-#selecting values from dataframe
+# Selecting values from dataframe
 
 select_column = data["Weight"]       # Selects entire column Weight
 select_column1 = data["Weight"][1]   # Selects index 1 in column Weight
@@ -16,7 +16,7 @@ select_column1 = data["Weight"][1]   # Selects index 1 in column Weight
 select_row = data.iloc[2]            # select entire row at index 2
 select_row2 = data.iloc[2]["Weight"] #selects a single value of weight from row at index 2
 
-#Manipulating dataframe values
+# Manipulating dataframe values
 bmi = []
 # formulae is weight/(height**2)
 for i in range(len(data)):           # bmi calc logic
@@ -24,6 +24,9 @@ for i in range(len(data)):           # bmi calc logic
     bmi.append(bmi_score)
 
 data["bmi"] = bmi
+
+# Save dataframe to a file
+data.to_csv("bmi.csv")
 
 print(data)
 #print(select_column)
