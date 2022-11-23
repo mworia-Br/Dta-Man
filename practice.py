@@ -6,5 +6,7 @@ titled_columns = {"Name": column,
                  "Weight": [62, 100, 1] }
 data = pd.DataFrame(titled_columns)
 select_column = data["Weight"] # Selects entire column Weight
+select_column1 = data["Weight"][1] # Selects index 1 in column Weight
 print(data)
 print(select_column)
+print(select_column1)
