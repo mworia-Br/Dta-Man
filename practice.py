@@ -17,6 +17,7 @@ select_row = data.iloc[2]            # select entire row at index 2
 select_row2 = data.iloc[2]["Weight"] #selects a single value of weight from row at index 2
 
 # Manipulating dataframe values
+
 bmi = []
 # formulae is weight/(height**2)
 for i in range(len(data)):           # bmi calc logic
@@ -26,7 +27,9 @@ for i in range(len(data)):           # bmi calc logic
 data["bmi"] = bmi
 
 # Save dataframe to a file
+
 data.to_csv("bmi.csv",sep="\t")
+data.to_csv("bmi.txt",sep="\t")     #saves in txt format
 
 print(data)
 #print(select_column)
