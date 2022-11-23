@@ -13,7 +13,7 @@ select_row = data.iloc[2] # select entire row at index 2
 select_row2 = data.iloc[2]["Weight"] #selects a single value of weight from row at index 2
 
 print(data)
-print(select_column)
-print(select_column1)
-print(select_row)
-print(select_row2)
+#print(select_column)
+#print(select_column1)
+#print(select_row)
+#print(select_row2)
