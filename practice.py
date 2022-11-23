@@ -28,8 +28,8 @@ data["bmi"] = bmi
 
 # Save dataframe to a file
 
-data.to_csv("bmi.csv",sep="\t")
-data.to_csv("bmi.txt",sep="\t")     #saves in txt format
+data.to_csv("bmi.csv",index=False, sep="\t")
+data.to_csv("bmi.txt",index=False, sep="\t")     #saves in txt format
 
 print(data)
 #print(select_column)
