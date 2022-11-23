@@ -26,7 +26,7 @@ for i in range(len(data)):           # bmi calc logic
 data["bmi"] = bmi
 
 # Save dataframe to a file
-data.to_csv("bmi.csv")
+data.to_csv("bmi.csv",sep="\t")
 
 print(data)
 #print(select_column)
